@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./Media/logo.png" type="image/x-icon" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Upper -->
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <!-- lower -->
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./Media/library_icon.png" alt="icon" />
+              <a href="">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <!-- Lower -->
+          <div class="boxes">
+            <div class="box">
+              <h3>Create your first playlist</h3>
+              <p>Its's easy, we'll help you</p>
+              <button class="badge">Create Playlist</button>
+            </div>
+            <div class="box">
+              <h3>Let's find some podcasts to follow</h3>
+              <p>We'll keep you updated on new episodes</p>
+              <button class="badge">Browse Podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Nav Bar -->
+        <div class="navbar">
+          <div class="nav-left">
+            <img src="./Media/backward_icon.png" alt="icon" />
+            <img src="./Media/forward_icon.png" alt="icon" class="hide" />
+          </div>
+          <div class="nav-right">
+            <button class="badge hide">Upgrade</button>
+            <button class="badge instal">
+              <i
+                class="fa-regular fa-circle-down"
+                style="margin-right: 0.11rem"
+              ></i>
+              Install app
+            </button>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+        <!-- Card Content -->
+        <h2>Recently Played</h2>
+        <!-- Container 1 -->
+        <div class="cards-container">
+          <div class="card">
+            <img src="./Media/card8img.jpg" alt="card" />
+            <h3 class="card-title">Chaupai - Sahib</h3>
+            <p class="card-text">Your daily sleep mode with waheguru ...</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/Chaupai.mpeg" id="song"></audio>
+          </div>
+        </div>
+
+        <!-- Container 2 -->
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./Media/card2img.jpeg" alt="card" />
+            <h3 class="card-title">Mahiya Jinna Sohna</h3>
+            <p class="card-text">Darshan Raval</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/Mahiya.mpeg" id="song"></audio>
+          </div>
+          <div class="card">
+            <img src="./Media/still-rollin.jpg" alt="card" />
+            <h3 class="card-title">Still Rollin</h3>
+            <p class="card-text">Subh</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/Still_Rollin.mp3" id="song"></audio>
+          </div>
+          <div class="card">
+            <img src="./Media/rollin.jpg" alt="card" />
+            <h3 class="card-title">Rollin</h3>
+            <p class="card-text">Subh</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/rollin.mpeg" id="song"></audio>
+          </div>
+          <div class="card">
+            <img src="./Media/card7img.jpg" alt="card" />
+            <h3 class="card-title">295</h3>
+            <p class="card-text">Sidhu Moose Wala</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/295.mpeg" id="song"></audio>
+          </div>
+          <div class="card">
+            <img src="./Media/card9img.jpg" alt="card" />
+            <h3 class="card-title">Lemonade</h3>
+            <p class="card-text">Diljit Dosanjh</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+            <audio src="./Media/Lemonade.mpeg" id="song"></audio>
+          </div>
+        </div>
+
+        <!-- Container 3 -->
+        <h2>Feautured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./Media/card5img.jpeg" alt="card" />
+            <h3 class="card-title">Top Songs - Global</h3>
+            <p class="card-text">Halsey, Dua Lips and more...</p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+          </div>
+          <div class="card">
+            <img src="./Media/card6img.jpeg" alt="card" />
+            <h3 class="card-title">Top Songs - India</h3>
+            <p class="card-text">
+              Pump up your adrenaline with Indian Punjabi hits!...
+            </p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+          </div>
+          <div class="card">
+            <img src="./Media/card1img.jpeg" alt="card" />
+            <h3 class="card-title">Top 50 - Global</h3>
+            <p class="card-text">
+              The top-50 finest set of Global music from past 5 year...
+            </p>
+            <div class="btn"><i class="fa-solid fa-play"></i></div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-content">
+            <h3 class="foot-head">Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3 class="foot-head">Communities</h3>
+            <ul>
+              <li><a href="#">For Artists</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Vendors</a></li>
+              <li><a href="#">Spotify for Work</a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3 class="foot-head">Useful links</h3>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Free Mobile App</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="line-end">
+          <div class="line"></div>
+        </div>
+      </div>
+      <!-- Music player -->
+      <div class="music-player">
+        <div class="album">
+          <img src="./Media/album_picture.jpeg" alt="" />
+          <p>Daylight <br /><span>David Kushner</span></p>
+          <img
+            src="./Media/album_icon1.png"
+            alt=""
+            class="album-icons"
+            style="width: 1.7rem; width: 1.7rem"
+          />
+          <img
+            src="./Media/album_icon2.png"
+            alt=""
+            class="album-icons"
+            style="width: 1.7rem; width: 1.7rem"
+          />
+        </div>
+
+        <div class="player">
+          <div class="player-control">
+            <img
+              src="./Media/player_icon1.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./Media/player_icon2.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./Media/player_icon3.png"
+              class="player-control-icon"
+              alt=""
+              style="opacity: 1; height: 2rem"
+            />
+            <img
+              src="./Media/player_icon4.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./Media/player_icon5.png"
+              class="player-control-icon"
+              alt=""
+            />
+          </div>
+          <div class="playback-bar">
+            <span>00:00</span>
+            <input type="range" class="progress-bar" value="10" />
+            <span>4:27</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <img src="Media/controls_icon1.png" alt="" class="controls-icon" />
+          <img src="Media/controls_icon2.png" alt="" class="controls-icon" />
+          <img
+            src="Media/controls_icon3.png"
+            alt=""
+            class="controls-icon"
+            style="width: 1.7rem; height: 1.7rem"
+          />
+          <img
+            src="Media/controls_icon4.png"
+            alt=""
+            class="controls-icon"
+            style="width: 1.6rem; height: 1.5rem"
+          />
+          <img src="Media/controls_icon5.png" alt="" class="controls-icon" />
+          <input
+            type="range"
+            name="range"
+            class="progress-bar"
+            step="5"
+            id="vol"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var songs = document.querySelectorAll("audio");
+      var icons = document.getElementsByClassName("btn");
+
+      for (let i = 0; i < icons.length; i++) {
+        icons[i].onclick = function () {
+          // Pause all other songs
+          songs.forEach((song, index) => {
+            if (index !== i) {
+              song.pause();
+              icons[index].innerHTML = '<i class="fa-solid fa-play"></i>'; // Change other icons back to play
+            }
+          });
+
+          // Play or pause the current song
+          if (songs[i].paused) {
+            songs[i].play();
+            icons[i].innerHTML = '<i class="fa-solid fa-pause"></i>';
+          } else {
+            songs[i].pause();
+            icons[i].innerHTML = '<i class="fa-solid fa-play"></i>'; // Change back to play icon
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
