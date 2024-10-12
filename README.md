@@ -8,7 +8,7 @@
    3. JavaScript
 
 ## Author :
-   Siddhartha Raghuvanshi
+   Siddhartha Raghuvanshi <br>
    Email: siddhartharaghuvanshi01@gmail.com
 
 ## Link :
