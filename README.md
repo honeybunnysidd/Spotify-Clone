@@ -1,6 +1,6 @@
 # Spotify Clone
 
-## A clone of the Spotify' Homepage with playing song in background.
+## A clone of the Spotify's Homepage with playing song in background.
 
 ## Technologies used :
    1. HTML
