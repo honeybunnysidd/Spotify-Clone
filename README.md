@@ -5,6 +5,11 @@
 </div>
 
 ## A clone of the Spotify's Homepage with playing song in background.
+<a style="" href="https://honeybunnysidd.github.io/Spotify-Clone">
+  
+![spotify](https://github.com/user-attachments/assets/ec6e8fdf-e8d6-43ec-b61d-9f6c5a1a825a)
+
+</a>
 
 ## Technologies used :
   | HTML  | CSS  | JavaScript  |
